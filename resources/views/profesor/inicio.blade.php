@@ -2,7 +2,11 @@
 
 @section('content')
 
-{{ Auth::user()->name}}
+<div class="container-fluid">
+    <div class="row">
+    <div class="col d-flex justify-content-between"><h2>Profesor: {{Auth::user()->name}} Curso: {{Auth::user()->getNivel()}} </h2></div>
+    </div>
+
 
 <form action="{{url('/pregunta')}}" meth="post">
     <div class="btn btn-primary">Crear preguntas</div>

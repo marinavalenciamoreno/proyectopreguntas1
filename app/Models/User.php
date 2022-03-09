@@ -44,7 +44,7 @@ class User extends Authenticatable
     ];
 
     public function nivel(){//Alumno
-        return $this->belongsTo('App\Models\Niveleseducativos');
+        return $this->belongsTo('App\Models\Nivel');
     }
 
     // Usando la tabla pivot - tabla: examen_user
@@ -54,6 +54,13 @@ class User extends Authenticatable
 
     public function materia(){ //Profesor
         return $this->hasOne('App\Models\Materia');
+    }
+
+    public function getNivel(){
+        if($this->nivel_id)
+            return $this->nivel->nombre;
+
+        return "Sin curso asignado";
     }
    
 }

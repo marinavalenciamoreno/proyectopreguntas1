@@ -39,5 +39,20 @@ class UsersSeeder extends Seeder
             'password' => bcrypt("profmat1eso"),
             'tipo' => "profesor"
         ]);
+
+        DB::table('users')->insert([
+            'name' => "Profesor Biología",
+            'email' => "profebio@gmail.com",
+            'nivel_id' => 2,
+            'password' => bcrypt("profesorbio"),
+            'tipo' => "profesor"
+        ]);
+        DB::table('users')->insert([
+            'name' => "Profesor Física",
+            'email' => "profefis@gmail.com",
+            'nivel_id' => 3,
+            'password' => bcrypt("profefis"),
+            'tipo' => "profesor"
+        ]);
     }
 }

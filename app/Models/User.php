@@ -62,5 +62,9 @@ class User extends Authenticatable
 
         return "Sin curso asignado";
     }
+
+    // public function getMateria(){
+    //     if($this->)
+    // }
    
 }

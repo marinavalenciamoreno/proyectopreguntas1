@@ -17,32 +17,38 @@ class MateriasSeeder extends Seeder
     {
         DB::table('materias')->insert([
             'nombre'=>"Biología y Geología (1º ESO)",
-            'nivel_id'=>1
+            'nivel_id'=>1,
+            'user_id' => 3
         ]);
 
         DB::table('materias')->insert([
             'nombre'=>"Matemáticas (1º ESO)",
-            'nivel_id'=>1
+            'nivel_id'=>1,
+            'user_id' => 3
         ]);
 
         DB::table('materias')->insert([
             'nombre'=>"Música (2º ESO)",
-            'nivel_id'=>2
+            'nivel_id'=>2,
+            'user_id' => 4
         ]);
 
         DB::table('materias')->insert([
             'nombre'=>"Geología (2º ESO)",
-            'nivel_id'=>2
+            'nivel_id'=>2,
+            'user_id' => 4
         ]);
 
         DB::table('materias')->insert([
             'nombre'=>"Biología y Geología (3º ESO)",
-            'nivel_id'=>3
+            'nivel_id'=>3,
+            'user_id' => 5
         ]);
 
         DB::table('materias')->insert([
             'nombre'=>"Física y Química (3º ESO)",
-            'nivel_id'=>3
+            'nivel_id'=>3,
+            'user_id' => 3
         ]);
     }
 }

@@ -9,7 +9,8 @@ class Tema extends Model
 {
     protected $fillable=[
         'numero',
-        'nombre'
+        'nombre',
+        'materia_id'
     ];
 
     public function examens(){

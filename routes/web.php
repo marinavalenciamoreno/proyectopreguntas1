@@ -30,3 +30,9 @@ Route::get('/profesor', [ProfesorController::class, 'inicio'])->middleware('prof
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::post('/resultado', [ProfesorController::class, 'resultado'])->middleware('profe');
+
+Route::get('/tema', [ProfesorController::class, 'creartema']);
+Route::post('/tema', [ProfesorController::class, 'generartema']);
+
+Route::get('/pregunta',[ProfesorController::class, 'pregunta']);
+Route::post('/pregunta',[ProfesorController::class, 'crearpregunta']);

@@ -20,6 +20,10 @@ class Materia extends Model
         return $this->belongsTo('App\Models\Niveleseducativo');
     }
 
+    public function tema(){
+        return $this->hasMany(Tema::class);
+    }
+
     
     
 }

@@ -17,7 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string("nombre");
             $table->bigInteger("nivel_id")->unsigned();
+            $table->bigInteger("user_id")->unsigned();
             $table->foreign("nivel_id")->references("id")->on("nivels")->onDelete("cascade");
+            $table->foreign('user_id')->references('id')->on("users")->onDelete("cascade");
             $table->timestamps();
         });
     }

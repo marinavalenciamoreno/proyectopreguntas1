@@ -1,6 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
+
+{{ Auth::user()->name}}
+
 <form action="{{url('/pregunta')}}" meth="post">
     <div class="btn btn-primary">Crear preguntas</div>
 </form>
